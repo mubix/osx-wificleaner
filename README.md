@@ -3,6 +3,10 @@ Cleans out "open" wireless connections from OSX machines
 
 Inspired by: https://isc.sans.edu/forums/diary/Investigating+OffPremise+Wireless+Behaviour+or+I+Know+What+You+Connected+To/22089/
 
+If you don't use `sudo` the script will still work, it will simply display the following popup for every single network it needs to remove:
+
+![](https://i.imgur.com/YiP3quI.png)
+
 Example run:
 ```
 wpad:osx-wificleaner mubix$ sudo ./osx_wificleaner.py
