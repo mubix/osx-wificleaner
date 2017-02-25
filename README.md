@@ -1,6 +1,8 @@
 # osx-wificleaner
 Cleans out "open" wireless connections from OSX machine
 
+Inspired by: https://isc.sans.edu/forums/diary/Investigating+OffPremise+Wireless+Behaviour+or+I+Know+What+You+Connected+To/22089/
+
 Example run:
 ```
 wpad:osx-wificleaner mubix$ sudo ./osx_wificleaner.py
