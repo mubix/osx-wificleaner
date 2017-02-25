@@ -1,5 +1,5 @@
 # osx-wificleaner
-Cleans out "open" wireless connections from OSX machine
+Cleans out "open" wireless connections from OSX machines
 
 Inspired by: https://isc.sans.edu/forums/diary/Investigating+OffPremise+Wireless+Behaviour+or+I+Know+What+You+Connected+To/22089/
 
