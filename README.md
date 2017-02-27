@@ -4,10 +4,6 @@ Cleans out "open" wireless connections from OSX machines
 - Inspired by: https://isc.sans.edu/forums/diary/Investigating+OffPremise+Wireless+Behaviour+or+I+Know+What+You+Connected+To/22089/
 - For a Windows / Powershell script you can find `Get-OpenWifiNetworks.ps1` here: https://github.com/secopsconsult/powershell
 
-If you don't use `sudo` the script will still work, it will simply display the following popup for every single network it needs to remove:
-
-![](https://i.imgur.com/YiP3quI.png)
-
 Example run:
 ```
 wpad:osx-wificleaner mubix$ sudo ./osx_wificleaner.py
@@ -25,8 +21,6 @@ Password:
 [-] Saved Network Ruxcon - Encryption: WPA2 Personal
 
 ====== Removing 'Open' networks from list ======
-++++++++++++++++++++++++++++++++++++++++++++++++
-+++++ THIS WILL CREATE POPUPS IF NOT SUDO ++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++
 [+] Removing hhonors
 Removed hhonors from the preferred networks list
