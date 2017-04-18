@@ -1,8 +1,13 @@
 #!/usr/bin/python
 
+import os
 import plistlib
-import subprocess
 import re
+import subprocess
+import sys
+
+if os.geteuid() != 0:
+    os.execvp("sudo", ["sudo"] + sys.argv)
 
 interfacelist = subprocess.Popen(["/usr/sbin/networksetup","-listallhardwareports"], stdout=subprocess.PIPE).communicate()[0]
 try:
@@ -29,8 +34,6 @@ for wifilist in networklist:
 
 print "\n"
 print "====== Removing 'Open' networks from list ======"
-print "++++++++++++++++++++++++++++++++++++++++++++++++"
-print "+++++ THIS WILL CREATE POPUPS IF NOT SUDO ++++++"
 print "++++++++++++++++++++++++++++++++++++++++++++++++"
 
 for network in opennetworks:
